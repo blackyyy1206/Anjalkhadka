@@ -4,7 +4,7 @@ import { baseURL, gallery, person } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
-    title: gallery.title,
+    title: photos.title,
     description: gallery.description,
     baseURL: baseURL,
     image: `/api/og/generate?title=${encodeURIComponent(gallery.title)}`,
